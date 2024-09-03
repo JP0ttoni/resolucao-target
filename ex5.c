@@ -13,7 +13,6 @@ void inverterString(char str[]) {
         temp = str[inicio];
         str[inicio] = str[fim];
         str[fim] = temp;
-
         // Move os índices para o meio
         inicio++;
         fim--;
@@ -25,12 +24,9 @@ int main() {
 
     printf("Digite uma string (maximo %d caracteres): ", MAX_LENGTH - 1);
     fgets(str, sizeof(str), stdin);
-
     // Remove o caractere de nova linha, se presente
     str[strcspn(str, "\n")] = '\0';
-
     inverterString(str);
-
     printf("String invertida: %s\n", str);
 
     return 0;
