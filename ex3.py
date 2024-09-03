@@ -1,6 +1,6 @@
 import json
 
-with open('ex3_arq.json') as dados_json:
+with open('resolucao-target/ex3_arq.json') as dados_json:
     dados = json.load(dados_json)
     
 faturamentos = [dia["valor"] for dia in dados["faturamento_diario"]]
